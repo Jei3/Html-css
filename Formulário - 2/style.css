@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #535971;
+    --secondary-color: #FF5374;
+    --span-color: #EFEFEF;
+    --bg-color: #E5E5E5;
+    --border-color: #E6E6F0;
+    --white-color: #FFFFFF;
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    background-color: var(--bg-color);
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 43.6rem;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+h1, h3 {
+    font-family: 'Staatliches', sans-serif;
+
+    color: var(--primary-color);
+}
+
+.page {
+    width: 75rem;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    color: var(--white-color);
+
+    margin-top: 14rem;
+    margin-bottom: 1.8rem;
+}
+
+.header p {
+    color: var(--white-color);    
+    font-size: 2rem;
+    line-height: 3rem;
+
+    width: 41.7rem;
+
+}
+
+form {
+    background-color: var(--white-color);
+    margin-top: 5.8rem;
+    min-height: 300px;
+    border-radius: .8rem .8rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4.8rem;
+
+    padding: 6.4rem;
+}
+
+form legend {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    color: var(--primary-color);
+
+    padding-bottom: .8rem;
+
+    border-bottom: 1px solid var(--span-color);
+}
+
+#form > fieldset:nth-child(1) > div > legend {
+    padding-bottom: 1.6rem;
+
+}
+
+fieldset {
+    border: none;
+} 
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.input-wrapper label {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--primary-color);
+
+    margin-bottom: .8rem;
+}
+
+.input-wrapper label span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    color: var(--span-color);
+
+    padding: .4rem;
+}
+
+.input-wrapper label span:hover {
+    color: #8f8f8f;
+}
+
+
+.input-wrapper input, .input-wrapper textarea, .input-wrapper select {
+    background: var(--span-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: .4rem;
+
+    height: 5.6rem;
+
+    padding: 1rem;
+
+    font-size: 1.8rem;
+    line-height: 1rem;
+
+}
+
+#form > fieldset:nth-child(2) > div.input-wrapper > label {
+    margin-top: 3.2rem;
+}
+
+h3 {
+    padding-top: 3.2rem;
+
+    line-height: 3.4rem;
+}
+
+.name-colum {
+    display: flex;
+    gap: 2.2rem;
+
+    width: 100%;
+}
+
+.frist-date-colum3 {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.frist-date-colum3 > div:nth-child(1) {
+    width: 100%;
+}
+
+.second-date-colum3 {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.second-date-colum3 > div:nth-child(1) {
+    width: 100%;
+}
+
+.footer {
+    
+    width: 75rem;
+
+    margin: 0 auto 10rem;
+    padding: 7.1rem 5.2rem;
+    
+    background-color: var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0 0 .8rem .8rem;
+}
+
+.button {
+    height: 5.565rem;
+    width: 60.8rem;
+
+    border-radius: 2rem;
+    border: 0;
+
+    background-color: var(--secondary-color);
+
+    color: var(--white-color);
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+.button:hover {
+    background: #b93852;
+    transition: .5s;
+}
+
