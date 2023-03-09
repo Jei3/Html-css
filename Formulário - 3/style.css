@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-top: #293241;
+    --bg-body: #BFD7E4;
+    --button-color: #F67669;
+    --form-color: #FFFFFF;
+    --text-color: #4E4958;
+    --title-color: #253B51;
+    --bg-input: #E6E6F0;
+
+}
+
+h1, legend, button {
+    font-family: 'Staatliches', sans-serif;
+}
+
+body {
+    font-family: 'Popins', sans-serif;
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--text-color);
+
+    background-color: var(--bg-body);
+
+}
+
+body::before {
+    content: "";
+    
+    height: 46.5rem;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    
+    background-color: var(--bg-top);
+}
+
+.header {
+    margin-top: 12.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    color: var(--form-color);
+
+    font-size: 3.6rem;
+    line-height: 4.5rem;
+
+}
+
+.header p {
+    color: var(--form-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    margin-bottom: .2rem;
+}
+
+.header img {
+    margin-bottom: 3.2rem;
+}
+
+.header .infos {
+    height: 13.3rem;
+    width: 75rem;
+
+    background-color: var(--button-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--form-color);
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    border-radius: 2rem 2rem 0 0 ;
+}
+
+.page {
+    width: 75rem ;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--form-color);
+    min-height: 30rem;
+    gap: 5rem;
+
+    padding:  3.166rem 6.4rem  0 6.4rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.793rem;
+    margin-top: 3.5rem;
+
+    width: 100%;
+}
+
+.input-wrapper input, .input-wrapper textarea, .input-wrapper select {
+    height: 5.553rem;
+    
+    background-color: var(--bg-input);
+    
+    border-radius: .8rem;
+    border: none;
+
+    padding: 1rem;
+}
+
+.colum-name {
+    display: flex;
+    gap: 2.2rem;
+
+}
+
+.infos legend {
+    color: var(--form-color);
+    padding: 0;
+    border: none;
+}
+
+legend {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    color: var(--title-color) ;
+
+    border-bottom: 1px solid var(--bg-input);
+
+    width: 100%;
+    padding: .8rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper label span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    color: var(--bg-input);
+}
+
+.input-wrapper label span:hover {
+    color: var(--bg-top);
+    transition: .4s;
+}
+
+#feedback {
+    height: 16.659rem;
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    font-family: 'popins', sans-serif;
+    resize: none;
+
+    margin-bottom: 2.954rem;
+}
+
+
+.checkbox-mentor #checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.checkbox-mentor label {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    cursor: pointer;
+
+}
+
+.checkbox-mentor label::before {
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+
+    display: block;
+    border: 1px solid var(--bg-input);
+    border-radius: .8rem;
+
+    cursor: pointer;
+}
+
+.checkbox-mentor input:checked + label::before {
+    background-image: url(./images/check-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.colum-next-date {
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+#date {
+    width: 30rem;
+    margin-right: 3rem;
+}
+
+.footer {
+    height: 17.874rem;
+
+    background-color: var(--form-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 6rem;
+
+    border-radius: 0 0 2rem 2rem;
+}
+
+.button {
+    width: 62.2rem;
+    height: 5.1rem;
+    
+    background-color: var(--button-color);
+    color: var(--form-color);
+    
+    border-radius: .8rem;
+    border: none;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .93;
+    transition: .3s;
+}
